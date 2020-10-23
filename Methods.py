@@ -3,14 +3,14 @@ import tkinter as tk
 from tkinter import ttk, messagebox, Canvas 
 #used to create the user interface
 import math
-from math import inf 
+from math import inf
 #used as a comparison value
 import copy
 from copy import deepcopy  
 #used to copy the data matrices so they can be manipulated whilst keeping an original copy
-import Classes 
+import tableClass 
 #written on a seprate program to make it easier to maintain
-from Classes import tableClass, analysisClass 
+from tableClass import tableClass, analysisClass 
 #used to create the interface for both inputs and results
 
 
@@ -1037,7 +1037,6 @@ def columnSearch(x, y, allocationArray, vertices, columns, rows, skipVertex, war
         recurse = False
     else:
         x = 0
-
     while vertexFound == False: 
         #the code is executed repeatedly until a vertex is found 
         index = [x,y] 
@@ -1063,7 +1062,6 @@ def columnSearch(x, y, allocationArray, vertices, columns, rows, skipVertex, war
     #returns the number of locations where allocations have been made
     degenerate = degeneracyCheck(factories, warehouses, allocations) 
     #must check if new solution is degenerate
-    
     if degenerate == True:
         return None, True
     else:
@@ -1304,6 +1302,14 @@ def mainMenu():
     #creates an infinte loop waiting for the user to give it a task and will carry on until the program (interface) is closed
 
 mainMenu() #calls the first function, starting the program
+
+
+
+
+
+
+
+
 
 
 
