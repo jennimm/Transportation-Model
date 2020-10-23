@@ -156,10 +156,6 @@ class analysisClass:
                 else:
                     self.blankCanvas.create_text((xCoOrd[y]+25, yCoOrd[x]+15), text=str(self.allocationArray[x][y])) #adds the allocations made at all factories/warehouses to the table, if no allocations are made it is shown as 0
             x += 1
-"""check if i can change the while loop to a for loop@@@"""
-"""check if i can move the functuons into the class"""
-
-"""there is an extra column for some reason but it is needed in some places and not others - must heck side effects of changing in appendAllocationArray"""
 
 
 def appendAllocationArray(allocationArray, columns, rows):
