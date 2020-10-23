@@ -8,9 +8,9 @@ from math import inf
 import copy
 from copy import deepcopy  
 #used to copy the data matrices so they can be manipulated whilst keeping an original copy
-import tableClass 
+import Classes 
 #written on a seprate program to make it easier to maintain
-from tableClass import tableClass, analysisClass 
+from Classes import tableClass, analysisClass 
 #used to create the interface for both inputs and results
 
 
